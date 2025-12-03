@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+#opciones {
+  background: #4a8fd0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+#btnVolver {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#btnVolver:hover {
+  text-decoration: underline;
+}
+
+#contcaja {
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  background: #f3f3f3;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#contTitulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#formContenido {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#formCont{
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.campo2 {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+#btnEnviar {
+  padding: 10px;
+  background: #4a8fd0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btnEnviar:hover {
+  background: #3a7abc;
+}
+
+@media (max-width: 600px) {
+  #contBox {
+    margin: 10px;
+    padding: 20px;
+  }
+}

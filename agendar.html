@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar una cita</title>
+    <link rel="stylesheet" href="agend.css">
+</head>
+<body>
+    <header id="headCita">
+        <h1 id="tituloCita">Agendar Cita</h1>
+        <a id="volver" href="veterinaria.html">Volver</a>
+    </header>
+    <section id="cajaCita">
+        <h2 id="subCita">Rellena tus datos</h2>
+
+        <form id="formCita">
+            <label>Nombre</label>
+            <input class="campo" id="nom" type="text" placeholder="Tu nombre" required>
+
+            <label>Mascota</label>
+            <input class="campo" id="masc" type="text" placeholder="Nombre de la mascota" required>
+
+            <label>Fecha</label>
+            <input class="campo" id="fecha" type="date">
+
+            <label>Hora</label>
+            <input class="campo" id="hora" type="time" required>
+
+            <label>Servicio</label>
+            <select class="campo" id="servicios">
+                <option>Consulta</option>
+                <option>Vacuna</option>
+                <option>Cirugía</option>
+                <option>Urgencia</option>
+                <option>Análisis</option>
+            </select>
+
+            <button type="button" id="btnAgendar">Agendar</button>
+        </form>
+
+        <p id="msjOk"></p>
+    </section>
+<script src="agend.js"></script>
+</body>
+</html>

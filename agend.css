@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+#headCita {
+    background: #3a86ff;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#volver {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#volver:hover {
+    text-decoration: underline;
+}
+
+#cajaCita {
+    max-width: 500px;
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+#subCita {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#formCita {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.campo {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+#btnAgendar {
+    padding: 10px;
+    background: #3a86ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#btnAgendar:hover {
+    background: #2a6fcc;
+}
+
+#mensajeOk {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+@media (max-width: 600px) {
+    #cajaCita {
+        margin: 15px;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+#encabezado {
+    background: #3a86ff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnMenu {
+    display: none;
+    background: black;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#foot{
+    width: 300;
+    height: 200;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.opcion{
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+#btnllamar {
+    background: black;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    cursor: pointer;
+}
+
+#inicio {
+    display: flex;
+    padding: 40px;
+    background: white;
+    gap: 30px;
+}
+
+#cajaInicio {
+    flex: 1;
+}
+
+#AgendarCita {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#foto {
+    flex: 1;
+    background: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicios {
+    padding: 40px;
+    text-align: center;
+}
+
+#servT {
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#servcaja {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.servicio {
+    background: white;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#sobreSec {
+  padding: 40px;
+  background: #e7eef5;
+  text-align: center;
+}
+
+#historia {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#texto {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.4;
+  font-size: 16px;
+  color: #444;
+}
+
+#sobre {
+    padding: 40px;
+    text-align: center;
+    background: #e7eef5;
+    margin-top: 20px;
+}
+
+#sobreT {
+    font-size: 22px;
+    background: #dce6f5;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#sobreP {
+    margin-top: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #444;
+}
+
+@media (max-width: 900px) {
+
+    #btnMenu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        background: #3a86ff;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #menu a {
+        margin: 10px 0;
+    }
+
+    #btnCall {
+        margin-top: 10px;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #heroImg {
+        height: 200px;
+    }
+
+    #servBox {
+        grid-template-columns: 1fr;
+    }
+}
