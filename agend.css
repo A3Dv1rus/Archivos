@@ -4,7 +4,7 @@ body {
     background: #f4f4f4;
 }
 
-#headCita {
+#encabezadoCita {
     background: #3a86ff;
     padding: 15px;
     color: white;
@@ -70,8 +70,32 @@ body {
 }
 
 @media (max-width: 600px) {
+    @media (max-width: 600px) {
+
+    #encabezadoCita {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
     #cajaCita {
-        margin: 15px;
+        width: 90%;
+        margin: 20px auto;
         padding: 20px;
     }
+
+    .campo {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #btnAgendar {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #mensajeOk {
+        font-size: 15px;
+    }
+}
 }

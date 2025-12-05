@@ -92,6 +92,10 @@ body {
     background: #e0e0e0;
     padding: 5px 10px;
     border-radius: 5px;
+    background: #b8b8b8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 #servcaja {
@@ -128,7 +132,7 @@ body {
   color: #444;
 }
 
-#sobre {
+#sobreNosotros {
     padding: 40px;
     text-align: center;
     background: #e7eef5;
@@ -153,38 +157,190 @@ body {
     color: #444;
 }
 
-@media (max-width: 900px) {
+#mediosCaja{
+    background-color: #3a86ff;
+    display: flex;
+    justify-content: center; 
+    padding: 6px, 12px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.medios{
+    color: white;
+    font-size: 22px;
+    padding: 6px 30px;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#pie {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: center; 
+    gap: 60px;                 
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        font-family: Arial;
+        background: #f4f4f4;
+    }
+
+    #encabezado {
+        background: #3a86ff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
 
     #btnMenu {
-        display: block;
+        display: none;
+        background: black;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        cursor: pointer;
+        font-size: 18px;
     }
 
     #menu {
-        display: none;
-        flex-direction: column;
-        background: #3a86ff;
-        width: 100%;
-        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
     }
 
-    #menu a {
-        margin: 10px 0;
+    .opcion{
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
     }
 
-    #btnCall {
-        margin-top: 10px;
+    #btnllamar {
+        background: black;
+        color: white;
+        border: none;
+        padding: 6px 15px;
+        cursor: pointer;
     }
 
-    #hero {
-        flex-direction: column;
+    #inicio {
+        display: flex;
+        padding: 40px;
+        background: white;
+        gap: 30px;
+    }
+
+    #cajaInicio {
+        flex: 1;
+    }
+
+    #AgendarCita {
+        background: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    #foto {
+        flex: 1;
+        background: #d1d1d1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #servicios {
+        padding: 40px;
         text-align: center;
     }
 
-    #heroImg {
-        height: 200px;
+    #servT {
+        background: #b8b8b8;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
     }
 
-    #servBox {
-        grid-template-columns: 1fr;
+    #servcaja {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .servicio {
+        background: white;
+        border: 2px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    #sobreNosotros {
+        padding: 40px;
+        text-align: center;
+        background: #e7eef5;
+        margin-top: 20px;
+    }
+
+    #sobreT {
+        font-size: 22px;
+        background: #dce6f5;
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    #sobreP {
+        margin-top: 15px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+        font-size: 16px;
+        color: #444;
+    }
+
+    #mediosCaja{
+        background-color: #3a86ff;
+        display: flex;
+        justify-content: center; 
+        padding: 6px, 12px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .medios{
+        color: white;
+        font-size: 22px;
+        padding: 6px 30px;
+        border: 2px solid white;
+        border-radius: 6px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #pie {
+        background-color: white;
+        padding: 40px;
+        display: flex;
+        justify-content: center; 
+        gap: 60px;                 
     }
 }
