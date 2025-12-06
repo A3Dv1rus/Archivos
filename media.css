@@ -1,0 +1,55 @@
+@media (max-width: 600px){
+
+    #logoTitulo{
+        font-size: 26px;
+    }
+
+    #encabezado{
+        flex-wrap: wrap;
+    }
+
+    #btnMenu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--azul);
+        padding: 15px;
+    }
+
+    #menu.activo{
+        display: flex;
+    }
+
+    .opcion{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #foto{
+        margin: auto;
+    }
+
+    #servcaja {
+        grid-template-columns: 1fr;
+    }
+
+    #mediosCaja{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #pie{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

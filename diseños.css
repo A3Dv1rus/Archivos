@@ -1,58 +1,85 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: #f4f4f4;
+    color: #222;
 }
 
 #encabezado {
     background: #3a86ff;
-    padding: 15px;
+    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
-#logo {
-    color: white;
-    font-size: 20px;
+.logoBox {
+    display: flex;
+    align-items: center;
+}
+
+#logoImg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#logoTitulo {
+    font-size: 36px;
+    margin-left: 15px;
     font-weight: bold;
+    color: white;
 }
 
 #btnMenu {
     display: none;
-    background: black;
+    background: #1a1a1a;
     color: white;
     border: none;
-    padding: 6px 12px;
+    padding: 8px 12px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
-#foot{
-    width: 300;
-    height: 200;
+#btnMenu:hover {
+    background: #333;
 }
 
 #menu {
     display: flex;
     align-items: center;
-    margin-right: 15px;
-    color: white;
-    text-decoration: none;
+    gap: 15px;
 }
 
-.opcion{
-    margin-right: 15px;
+.opcion {
     color: white;
     text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.opcion:hover {
+    background: rgba(0,0,0,0.25);
+    border: 2px solid black;
 }
 
 #btnllamar {
     background: black;
     color: white;
     border: none;
-    padding: 6px 15px;
+    padding: 7px 16px;
     cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#btnllamar:hover {
+    background: #4c4c4c;
 }
 
 #inicio {
@@ -69,10 +96,18 @@ body {
 #AgendarCita {
     background: black;
     color: white;
-    padding: 10px 20px;
-    border: none;
+    margin-top: 30px;
+    padding: 12px 25px;
+    border-radius: 6px;
     cursor: pointer;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+#AgendarCita:hover {
+    background: #444;
 }
 
 #foto {
@@ -81,20 +116,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
+}
+
+#fotoImg {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
 }
 
 #servicios {
     padding: 40px;
     text-align: center;
+    background-color: #5082bb;
+    color: rgb(0, 0, 0);
 }
 
 #servT {
-    background: #e0e0e0;
-    padding: 5px 10px;
-    border-radius: 5px;
     background: #b8b8b8;
-    padding: 5px 10px;
+    color: black;
+    padding: 7px 15px;
     border-radius: 5px;
+    font-size: 20px;
     display: inline-block;
 }
 
@@ -102,245 +145,76 @@ body {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .servicio {
     background: white;
-    border: 2px solid #ddd;
+    border: none;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: left;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
 }
 
-#sobreSec {
-  padding: 40px;
-  background: #e7eef5;
-  text-align: center;
-}
-
-#historia {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-#texto {
-  max-width: 650px;
-  margin: auto;
-  line-height: 1.4;
-  font-size: 16px;
-  color: #444;
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 #sobreNosotros {
     padding: 40px;
     text-align: center;
     background: #e7eef5;
-    margin-top: 20px;
 }
 
 #sobreT {
-    font-size: 22px;
+    font-size: 24px;
     background: #dce6f5;
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 5px;
+    padding: 6px 18px;
+    border-radius: 6px;
 }
 
 #sobreP {
     margin-top: 15px;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-    font-size: 16px;
-    color: #444;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 17px;
+    color: #333;
 }
 
-#mediosCaja{
+#mediosCaja {
     background-color: #3a86ff;
     display: flex;
-    justify-content: center; 
-    padding: 6px, 12px;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 35px;
+    padding: 30px 20px;
 }
 
-.medios{
+.medios {
     color: white;
-    font-size: 22px;
-    padding: 6px 30px;
+    font-size: 20px;
+    padding: 15px 25px;
     border: 2px solid white;
-    border-radius: 6px;
+    border-radius: 10px;
     display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+.medios:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.15);
 }
 
 #pie {
     background-color: white;
     padding: 40px;
     display: flex;
-    justify-content: center; 
-    gap: 60px;                 
-}
-
-@media (max-width: 600px) {
-    body {
-        margin: 0;
-        font-family: Arial;
-        background: #f4f4f4;
-    }
-
-    #encabezado {
-        background: #3a86ff;
-        padding: 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #logo {
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    #btnMenu {
-        display: none;
-        background: black;
-        color: white;
-        border: none;
-        padding: 6px 12px;
-        cursor: pointer;
-        font-size: 18px;
-    }
-
-    #menu {
-        display: flex;
-        align-items: center;
-        margin-right: 15px;
-        color: white;
-        text-decoration: none;
-    }
-
-    .opcion{
-        margin-right: 15px;
-        color: white;
-        text-decoration: none;
-    }
-
-    #btnllamar {
-        background: black;
-        color: white;
-        border: none;
-        padding: 6px 15px;
-        cursor: pointer;
-    }
-
-    #inicio {
-        display: flex;
-        padding: 40px;
-        background: white;
-        gap: 30px;
-    }
-
-    #cajaInicio {
-        flex: 1;
-    }
-
-    #AgendarCita {
-        background: black;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    #foto {
-        flex: 1;
-        background: #d1d1d1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #servicios {
-        padding: 40px;
-        text-align: center;
-    }
-
-    #servT {
-        background: #b8b8b8;
-        padding: 5px 10px;
-        border-radius: 5px;
-        display: inline-block;
-    }
-
-    #servcaja {
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    .servicio {
-        background: white;
-        border: 2px solid #ddd;
-        padding: 20px;
-        border-radius: 5px;
-        text-align: left;
-    }
-
-    #sobreNosotros {
-        padding: 40px;
-        text-align: center;
-        background: #e7eef5;
-        margin-top: 20px;
-    }
-
-    #sobreT {
-        font-size: 22px;
-        background: #dce6f5;
-        display: inline-block;
-        padding: 5px 15px;
-        border-radius: 5px;
-    }
-
-    #sobreP {
-        margin-top: 15px;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.5;
-        font-size: 16px;
-        color: #444;
-    }
-
-    #mediosCaja{
-        background-color: #3a86ff;
-        display: flex;
-        justify-content: center; 
-        padding: 6px, 12px;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .medios{
-        color: white;
-        font-size: 22px;
-        padding: 6px 30px;
-        border: 2px solid white;
-        border-radius: 6px;
-        display: inline-block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #pie {
-        background-color: white;
-        padding: 40px;
-        display: flex;
-        justify-content: center; 
-        gap: 60px;                 
-    }
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
 }

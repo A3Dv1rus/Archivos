@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VetCare "Veterinaria Cuidados"</title>
+    <title>VetCare - Veterinaria Cuidados</title>
     <link rel="stylesheet" href="diseños.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
     <header id="encabezado">
-        <div id="logo">
-            <img src="D:\CSSS\Archivos\imagenes\logo.jpg" alt="no carga">
-            VetCare
+        <div class="logoBox">
+            <img id="logoImg" src="imagenes/logo.jpg" alt="Logo VetCare">
+            <h1 id="logoTitulo">VetCare</h1>
         </div>
+
         <button id="btnMenu">☰</button>
+
         <nav id="menu">
-            <a class="opcion" href="">Servicios</a>
-            <a class="opcion" href="#sobre">Nosotros</a>
+            <a class="opcion" href="#servicios">Servicios</a>
+            <a class="opcion" href="#sobreNosotros">Nosotros</a>
             <a class="opcion" href="form.html">Contacto</a>
             <button id="btnllamar">Llamar</button>
         </nav>
@@ -24,72 +27,85 @@
         <section id="inicio">
             <div id="cajaInicio">
                 <h2>Bienvenido a VetCare</h2>
-                <p>Cuidado profesional para tus mascotas</p>
+                <p class="subTexto">Cuidado profesional para tus mascotas</p>
                 <p>
-                    Brindamos atención veterinaria de calidad con profesionales experimentados y 
-                    herramientas modernas.
+                    Brindamos atención veterinaria de calidad con profesionales experimentados 
+                    y herramientas modernas.
                 </p>
                 <a id="AgendarCita" href="agendar.html">Agendar Cita</a>
             </div>
-            <div id="fotocan">
-                <img id="foto" src="D:\CSSS\Archivos\imagenes\canino.jpg" alt="no carga">
+
+            <div id="foto">
+                <img id="fotoImg" src="imagenes/canino.jpg" alt="Foto mascota">
             </div>
         </section>
 
         <section id="servicios">
             <h3 id="servT">Nuestros Servicios</h3>
             <p>Ofrecemos una amplia gama de servicios veterinarios</p>
+
             <div id="servcaja">
+
                 <div class="servicio">
                     <h4>Consultas</h4>
                     <p>Exámenes y diagnósticos generales.</p>
                 </div>
+
                 <div class="servicio">
                     <h4>Vacunas</h4>
                     <p>Programas completos de vacunación.</p>
                 </div>
+
                 <div class="servicio">
                     <h4>Cirugía</h4>
                     <p>Procedimientos modernos y seguros.</p>
                 </div>
+
                 <div class="servicio">
                     <h4>Urgencias</h4>
                     <p>Atención urgente 24/7.</p>
                 </div>
+
                 <div class="servicio">
                     <h4>Análisis</h4>
                     <p>Resultados rápidos y precisos.</p>
                 </div>
+
                 <div class="servicio">
                     <h4>Farmacia</h4>
                     <p>Productos y medicinas para tu mascota.</p>
                 </div>
+
             </div>
         </section>
-    </main>
 
-    <section id="sobreNosotros">
+        <section id="sobreNosotros">
             <h3 id="sobreT">Sobre Nosotros</h3>
+
             <p id="sobreP">
                 Somos una clínica veterinaria comprometida con el bienestar de tus mascotas.
                 Contamos con un equipo profesional, instalaciones modernas y un trato cariñoso 
-                para todos los animalitos que atendemos.  
-                <br><br>
+                para todos los animalitos que atendemos.
                 Nuestra misión es brindar atención médica confiable, accesible y con calidez humana.
             </p>
+
+            <img id="imgSobre" src="imagenes/Sobre.png" alt="Equipo veterinario">
         </section>
-    <script src="javasc.js"></script>
+
+    </main>
 
     <div id="mediosCaja">
-        <div class="medios">           
-            <h4>Numeros</h4>
+        <div class="medios">
+            <h4>Teléfonos</h4>
             <p>+1 123 456 7890</p>
             <p>+1 123 456 7890</p>
         </div>
+
         <div class="medios">
-            <h4>Correo Electronico</h4>
+            <h4>Correo Electrónico</h4>
             <p>vetC@vectcare.com.bo</p>
         </div>
+
         <div class="medios">
             <h4>Sucursal</h4>
             <p>Plaza España, Calle Mendez Arcos</p>
@@ -99,5 +115,8 @@
     <footer id="pie">
         <p>© 2025 Clínica veterinaria VetCare - Todos los derechos reservados. La Paz, Bolivia.</p>
     </footer>
+
+    <script src="javasc.js"></script>
+
 </body>
 </html>
