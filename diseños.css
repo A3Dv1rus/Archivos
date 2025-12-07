@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,10 +15,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    box-shadow: 10px rgba(0,0,15);
 }
 
-.logoBox {
+.logoCaja {
     display: flex;
     align-items: center;
 }
@@ -64,11 +68,11 @@ body {
 }
 
 .opcion:hover {
-    background: rgba(0,0,0,0.25);
+    background: rgb(0, 0, 0);
     border: 2px solid black;
 }
 
-#btnllamar {
+#Llamar{
     background: black;
     color: white;
     border: none;
@@ -76,10 +80,11 @@ body {
     cursor: pointer;
     border-radius: 6px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
-#btnllamar:hover {
-    background: #4c4c4c;
+#Llamar:hover {
+    background: #7a7878;
 }
 
 #inicio {
@@ -90,7 +95,18 @@ body {
 }
 
 #cajaInicio {
-    flex: 1;
+    margin: 50px;
+    border: solid 3px;
+    border-radius: 10px;
+    border-color: black;
+    width: 800px;
+    padding: 25px;
+}
+
+#inicoTexto{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 40px;
 }
 
 #AgendarCita {
@@ -107,7 +123,7 @@ body {
 }
 
 #AgendarCita:hover {
-    background: #444;
+    background: #7a7878;
 }
 
 #foto {
@@ -154,13 +170,13 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    box-shadow: 10px 20px rgba(0,0,0,0.15);
     transition: 0.4s ease;
 }
 
 .servicio:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0);
 }
 
 #sobreNosotros {
@@ -168,18 +184,20 @@ body {
     background: #f4f4f4;
 }
 
-.sobre-contenedor {
+.sobreContenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
 }
 
-.sobre-img img {
+.sobreImagen img {
     width: 100%;
-    height: auto;
+    height: 600px;
+    width: 600px;
     border: 2px solid #000;
     background: #d1d6de;
+    margin-left: 60px;
 }
 
 #tagSobre {
@@ -192,19 +210,19 @@ body {
     font-weight: bold;
 }
 
-.sobre-titulo {
+.sobreTitulo {
     margin-top: 15px;
     font-size: 28px;
     color: #222;
 }
 
-.sobre-descripcion {
+.sobreDescripcion {
     color: #444;
     margin-top: 10px;
     line-height: 1.6;
 }
 
-.sobre-beneficios {
+.sobreBeneficios {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
