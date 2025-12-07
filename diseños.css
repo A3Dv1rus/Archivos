@@ -165,24 +165,78 @@ body {
 
 #sobreNosotros {
     padding: 40px;
-    text-align: center;
-    background: #e7eef5;
+    background: #f4f4f4;
 }
 
-#sobreT {
-    font-size: 24px;
-    background: #dce6f5;
+.sobre-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.sobre-img img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    background: #d1d6de;
+}
+
+#tagSobre {
+    border: 2px solid black;
+    background: white;
     padding: 6px 18px;
-    border-radius: 6px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: default;
+    font-weight: bold;
 }
 
-#sobreP {
+.sobre-titulo {
     margin-top: 15px;
-    max-width: 700px;
-    margin: auto;
+    font-size: 28px;
+    color: #222;
+}
+
+.sobre-descripcion {
+    color: #444;
+    margin-top: 10px;
     line-height: 1.6;
-    font-size: 17px;
-    color: #333;
+}
+
+.sobre-beneficios {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono {
+    font-size: 28px;
+    border: 2px solid black;
+    padding: 8px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficio h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.beneficio p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
 }
 
 #mediosCaja {
