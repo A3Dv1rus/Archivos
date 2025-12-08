@@ -23,12 +23,15 @@ body {
 }
 
 #contcaja {
-  padding: 30px;
-  max-width: 500px;
+  padding: 40px;
+  width: 500px;
   margin: auto;
   background: #f3f3f3;
-  margin-top: 20px;
+  margin-top: 70px;
   border-radius: 8px;
+  border-color: black;
+  border: solid 5px;
+
 }
 
 #contTitulo {
@@ -62,6 +65,7 @@ body {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #btnEnviar:hover {
@@ -82,8 +86,8 @@ body {
   }
 
   #contcaja {
-    width: 90%;
-    margin-top: 10px;
+    width: 350px;
+    margin-top: 30px;
     padding: 20px;
   }
 

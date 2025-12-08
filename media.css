@@ -6,50 +6,143 @@
 
     #encabezado{
         flex-wrap: wrap;
+        padding: 10px;
     }
 
     #btnMenu {
         display: block;
+        background: #000000;
+        color: #ffffff;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+    #hamburguesa {
+        display: none;
     }
 
     #menu {
         display: none;
+    }
+
+        #hamburguesa:checked ~ #menu {
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        background: var(--azul);
+    }
+
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 600px;
+        background: #3a86ff;
         padding: 15px;
     }
 
-    #menu.activo{
-        display: flex;
+    .opcion{
+        margin: 10px 0px;
+        font-size: 20px;
+        text-align: center;
     }
 
-    .opcion{
-        margin: 10px 0;
-        font-size: 20px;
+    #Llamar{
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px;
+        display: block;
     }
 
     #inicio {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
+    }
+
+    #cajaInicio{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     #foto{
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 350px;
+    }
+
+    #fotoImg{
+        width: 300px;
+        height: 350px;
+        border-radius: 20px;
     }
 
     #servcaja {
         grid-template-columns: 1fr;
     }
 
+    .sobreContenedor{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sobreImagen img{
+        width: 300px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+    }
+
+    .sobreInfo{
+        margin-top: 20px;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .beneficio{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        margin-bottom: 15px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .beneficio .icono{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
     #mediosCaja{
+        display: flex;
         flex-direction: column;
         gap: 15px;
+        text-align: center;
+        width: 600px;
+    }
+
+    .medios{
+        width: 200px;
+        margin-left: 65px;
+        margin-right: 65px;
     }
 
     #pie{
+        display: flex;
         flex-direction: column;
         gap: 20px;
         text-align: center;
+        width: 350px;
     }
 }
+
