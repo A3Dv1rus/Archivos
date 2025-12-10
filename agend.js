@@ -1,16 +1,6 @@
 let btn = document.getElementById("btnAgendar");
 let ok = document.getElementById("mensajeOk");
-let Vacio = document.getElementById("mensajeVacio");
-
-document.querySelectorAll('.VolverPrincipal').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.body.classList.add('fade-out');
-        setTimeout(() => {
-            window.location.href = this.href;
-        }, 500);
-    });
-});
+let vacio = document.getElementById("mensajeVacio");
 
 let campos = [
     document.getElementById("nom"),
@@ -18,12 +8,9 @@ let campos = [
     document.getElementById("fecha"),
     document.getElementById("hora"),
     document.getElementById("servicios"),
-]
-
-btn.onclick = () => {
-    ok.innerText = "Tu cita ha sido agendada correctamente";
-};
-
+    document.getElementById("animal"),
+    document.getElementById("raza")
+];
 btn.onclick = () => {
     try {
         campos.forEach(campo => {
@@ -32,10 +19,11 @@ btn.onclick = () => {
             }
         });
         ok.innerText = "Tu cita ha sido agendada correctamente";
-        Vacio.innerText = "";
-
+        vacio.innerText = "";
+        alert("La cita se ha agendado correctamente");
+        campos.forEach(campo => campo.value = "");
     } catch (error) {
-        Vacio.innerText = "Debes llenar todos los campos";
+        vacio.innerText = "Debes llenar todos los campos";
         ok.innerText = "";
     }
 };

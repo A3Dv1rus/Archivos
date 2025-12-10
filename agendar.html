@@ -10,7 +10,6 @@
     <header id="headCita">
     <header id="encabezadoCita">
         <h1 id="tituloCita">Agendar Cita</h1>
-        <a id="volver" href="veterinaria.html" class="transicionCita">Volver</a>
     </header>
     <section id="cajaCita">
         <h2 id="subCita">Rellena tus datos</h2>
@@ -36,6 +35,19 @@
                 <option>Análisis</option>
             </select>
 
+            <label>Animal</label>
+            <select class="campo" id="animal">
+                <option>Perro</option>
+                <option>Gato</option>
+                <option>Conejo</option>
+                <option>Ave</option>
+                <option>Reptil</option>
+                <option>Otro</option>
+            </select>
+
+            <label>Raza</label>
+            <input class="campo" id="raza" type="text" placeholder="Raza del animal">
+
             <button type="button" id="btnAgendar">Agendar</button>
         </form>
 
@@ -43,6 +55,5 @@
         <p id="mensajeVacio"></p>
     </section>
 <script src="agend.js"></script>
-<script src="javasc.js"></script>
 </body>
 </html>

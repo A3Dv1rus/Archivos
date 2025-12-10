@@ -87,8 +87,6 @@ body.fade-out {
 }
 
 @media (max-width: 600px) {
-    @media (max-width: 600px) {
-
     #encabezadoCita {
         flex-direction: column;
         text-align: center;
@@ -114,5 +112,4 @@ body.fade-out {
     #mensajeOk {
         font-size: 15px;
     }
-}
 }

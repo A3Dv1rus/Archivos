@@ -6,6 +6,10 @@ body.fade-out {
     opacity: 0;
 }
 
+main {
+    margin-top: 120px;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -21,6 +25,11 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 10px rgba(0,0,15);
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 98%; 
+    z-index: 999;
 }
 
 .logoCaja {
@@ -99,18 +108,28 @@ body {
 #inicio {
     display: flex;
     padding: 40px;
-    background: white;
+    background: linear-gradient(135deg, #ffffff, #dbe8ff);
     gap: 30px;
+    animation: fadeIn 1s ease;
 }
 
-#cajaInicio {
-    margin: 50px;
-    border: solid 3px;
-    border-radius: 10px;
-    border-color: black;
-    width: 800px;
-    padding: 25px;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
 }
+
+
+#cajaInicio h2, 
+#cajaInicio h3 {
+    animation: slideDown 0.7s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-15px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 
 #inicoTexto{
     font-size: 16px;
@@ -150,6 +169,11 @@ body {
     width: 100%;
     border-radius: 25px;
     object-fit: cover;
+    transition: 0.4s ease;
+}
+
+#fotoImg:hover {
+    transform: scale(1.05);
 }
 
 #servicios {
@@ -196,6 +220,22 @@ body {
     background: #f4f4f4;
 }
 
+#tituloMedios {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.sobreInfo {
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    animation: fadeIn 1s ease;
+}
+
 .sobreContenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -213,11 +253,9 @@ body {
 }
 
 #Sobre {
-    border: 2px solid black;
     background: white;
-    padding: 6px 18px;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 35px;
     cursor: default;
     font-weight: bold;
 }
@@ -294,11 +332,10 @@ body {
 }
 
 #pie {
-    background-color: white;
+    background: linear-gradient(90deg, #3a86ff, #6ab9ff);
+    color: white;
     padding: 40px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #333;
     font-weight: bold;
+    text-align: center;
 }
+
